@@ -1,21 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
 .container {
-  /* KARIERTER HINTERGRUND ENTFERNT */
-  background-color: #5a6c7d;
-  /* background-image entfernt */
-  /* background-size entfernt */
+  /* DUNKLER HINTERGRUND */
+  background-color: #3a4a5c;
   
   /* QUADRATISCH GEMACHT */
   width: 100vw;
   height: 100vh;
-  max-width: 100vh; /* Macht es quadratisch basierend auf der Höhe */
+  max-width: 100vh;
   margin: 0 auto;
   
   display: -webkit-box;
@@ -32,9 +32,10 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
 .container .card {
   padding: 20px;
-  background-color: #5a6c7d;
+  background-color: #e9e9e9;
   border-radius: 10px;
   width: 80%;
   max-width: 400px;
@@ -42,60 +43,69 @@
   -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
           box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
 }
+
 @media (max-width: 480px) {
   .container .card {
     width: 90%;
   }
 }
+
 .container .card h1 {
   margin-bottom: 40px;
   font-family: "Merriweather", serif;
   text-align: center;
 }
+
 .container .card #joke {
   margin-bottom: 20px;
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
 }
-.container .card #joke::before {
-  font-weight: bold;
-  content: "Setup: ";
-}
+
 .container .card #answer {
   margin-bottom: 20px;
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
 }
-.container .card #answer::before {
-  content: "Punch line: ";
-  font-weight: bold;
+
+/* LABELS FÜR SETUP UND PUNCH LINE */
+.container .card div strong {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
 }
+
 .container .card #generator {
   margin-top: 20px;
   padding: 10px 30px;
   border: none;
-  background-color: #5a6c7d;  /* ← DIESE ZEILE ÄNDERN */
+  background-color: #5a6c7d;
   color: white;
   border-radius: 5px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  transition: all 0.3s ease;  /* ← OPTIONAL: Smooth transition */
+  transition: all 0.3s ease;
+  -webkit-box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
+          box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
+}
+
+.container .card #generator:focus {
+  outline: none;
 }
 
 .container .card #generator:hover {
-  background-color: #4a5a6b;  /* ← OPTIONAL: Dunklere Farbe beim Hover */
+  background-color: #4a5a6b;
   cursor: pointer;
-  outline: none;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 480px) {
   .container {
-    max-width: 100vw; /* Auf mobilen Geräten volle Breite */
+    max-width: 100vw;
   }
   .container .card {
     margin-top: 0;
   }
 }
-
-/* FOOTER ENTFERNT - alle .footer-content Regeln gelöscht */
