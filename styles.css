@@ -87,8 +87,7 @@
   margin-left: auto;
   margin-right: auto;
   transition: all 0.3s ease;
-  -webkit-box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
-          box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
+  /* box-shadow entfernt */
 }
 
 .container .card #generator:focus {
