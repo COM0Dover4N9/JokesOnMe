@@ -8,11 +8,10 @@
 }
 
 .container {
-  background-color: #e5e5f7;
-  opacity: 0.8;
-  background-image: linear-gradient(#00203fff 1px, transparent 1px), linear-gradient(to right, #00203fff 1px, #ffffff 1px);
-  background-size: 20px 20px;
+  background-color: #f5f5f5;
+  width: 100vw;
   height: 100vh;
+  max-width: 100vh
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,13 +70,16 @@
   font-weight: bold;
 }
 
-.container .card #generator {
+container .card #generator {
   margin-top: 20px;
   padding: 10px 30px;
   border: none;
   background-color: #00203fff;
   color: white;
   border-radius: 5px;
+  display: block;           /* ← HIER */
+  margin-left: auto;        /* ← HIER */
+  margin-right: auto;       /* ← HIER */
   -webkit-box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
           box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
 }
@@ -104,28 +106,5 @@
   .container .card {
     margin-top: 10rem;
   }
-}
-
-.footer-content {
-  height: auto;
-  background-color: #00203fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 25px;
-  font-size: 1.3rem;
-}
-
-.footer-content p {
-  color: white;
-}
-
-.footer-content a {
-  color: white;
-  margin-right: 10px;
-  text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */
