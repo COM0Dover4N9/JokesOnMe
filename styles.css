@@ -58,19 +58,19 @@
 
 .container .card #joke {
   margin-bottom: 20px;
-  font-size: 1.3rem;
-  font-family: "Roboto", sans-serif;
+  font-size: 1.0rem;
+  font-family: "Arial", sans-serif;
 }
 
 .container .card #answer {
   margin-bottom: 20px;
-  font-size: 1.3rem;
-  font-family: "Roboto", sans-serif;
+  font-size: 1.0rem;
+  font-family: "Arial", sans-serif;
 }
 
 /* LABELS FÜR SETUP UND PUNCH LINE */
 .container .card div strong {
-  font-size: 1.1rem;
+  font-size: 0.7rem;
   color: #333;
   margin-bottom: 5px;
   display: block;
@@ -80,7 +80,7 @@
   margin-top: 20px;
   padding: 10px 30px;
   border: none;
-  background-color: #5a6c7d;
+  background-color: #43777B;
   color: white;
   border-radius: 5px;
   display: block;
