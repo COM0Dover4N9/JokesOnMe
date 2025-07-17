@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
 
-html, body {
-  background-color: #43777B;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +10,7 @@ html, body {
 
 .container {
   /* DUNKLER HINTERGRUND */
-  background-color: #43777B;
+  background-color: #2F787C;
   
   /* QUADRATISCH GEMACHT */
   width: 100vw;
