@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+/* Merriweather entfernt, wird nicht mehr benötigt */
 
 * {
   margin: 0;
@@ -24,8 +24,6 @@ html, body {
   border-radius: 10px;
   width: 80%;
   max-width: 400px;
-  margin: 0 auto;
-  /* Schatten entfernt */
 }
 
 @media (max-width: 480px) {
@@ -34,13 +32,15 @@ html, body {
   }
 }
 
+/* 🆕 Font für Titel Beganator */
 .container .card h1 {
   margin-bottom: 40px;
-  font-family: "Merriweather", serif;
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
+  font-weight: 600;
+  color: #000; /* Optional: weiß mit color: white; */
 }
 
-/* Setup-Text entfernt (wird in HTML nicht gebraucht) */
 .container .card #joke,
 .container .card #answer {
   margin-bottom: 20px;
